@@ -105,6 +105,9 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
+  @media screen and (min-width: 1024px) {
+    .home-content .intro {
+      margin: 12% auto; } }
   @media screen and (max-width: 767px) {
     .home-content .intro img {
       width: 39%; } }
@@ -193,15 +196,13 @@
       margin: 25% auto; } }
   @media screen and (min-width: 1024px) {
     .iconIllustrations {
-      margin: 25% auto; } }
+      margin: 12% auto; } }
   @media screen and (min-width: 1224px) {
     .iconIllustrations {
-      width: 53%;
-      margin: 20% auto; } }
+      width: 53%; } }
   @media screen and (min-width: 1440px) {
     .iconIllustrations {
-      width: 50%;
-      margin: 17% auto; } }
+      width: 50%; } }
   .iconIllustrations .shop, .iconIllustrations .fees, .iconIllustrations .classes {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -220,6 +221,9 @@
       .iconIllustrations .shop, .iconIllustrations .fees, .iconIllustrations .classes {
         margin-top: 60px; } }
     .iconIllustrations .shop a, .iconIllustrations .fees a, .iconIllustrations .classes a {
+      -webkit-transition: 1s ease;
+      -o-transition: 1s ease;
+      transition: 1s ease;
       min-width: 99px;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -232,7 +236,7 @@
       padding: 9px 10px;
       margin-top: 30px;
       font-family: 'Lato', serif;
-      font-weight: 300;
+      font-weight: 500;
       font-size: 1.1em;
       letter-spacing: 0.07em;
       text-align: center;
@@ -240,12 +244,24 @@
       @media screen and (max-width: 767px) {
         .iconIllustrations .shop a, .iconIllustrations .fees a, .iconIllustrations .classes a {
           min-width: 230px; } }
+      @media screen and (min-width: 1024px) {
+        .iconIllustrations .shop a, .iconIllustrations .fees a, .iconIllustrations .classes a {
+          min-width: 130px;
+          font-weight: 500; } }
+      .iconIllustrations .shop a:hover, .iconIllustrations .fees a:hover, .iconIllustrations .classes a:hover {
+        background-color: gray; }
   .iconIllustrations .shop img {
     width: 48%; }
   .iconIllustrations .shop a {
     background-color: #8ab6d8; }
   .iconIllustrations .fees img {
     width: 39%; }
+    @media screen and (min-width: 768px) {
+      .iconIllustrations .fees img {
+        width: 71%; } }
+    @media screen and (min-width: 1024px) {
+      .iconIllustrations .fees img {
+        width: 80%; } }
   .iconIllustrations .fees a {
     background-color: #efd97e; }
   .iconIllustrations .classes img {
@@ -269,22 +285,24 @@
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin: 13% auto; }
+  margin: 4% auto; }
   @media screen and (max-width: 767px) {
     .contactForm {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
       flex-direction: column;
-      margin: 10% auto; } }
+      margin: 5% auto; } }
   @media screen and (min-width: 1224px) {
     .contactForm {
       width: 80%;
-      padding: 0 10%; } }
+      padding: 0 10%;
+      margin: 3% auto; } }
   @media screen and (min-width: 1440px) {
     .contactForm {
       width: 74%;
-      padding: 0 13%; } }
+      padding: 0 13%;
+      margin: 2% auto; } }
   .contactForm div {
     width: 65%;
     margin: 0% auto; }
@@ -344,6 +362,9 @@
       .contactForm .form-inputs form input::placeholder {
         font-family: 'Lato', sans-serif; }
       .contactForm .form-inputs form input.sendButton {
+        -webkit-transition: 1s ease;
+        -o-transition: 1s ease;
+        transition: 1s ease;
         cursor: pointer;
         background-color: #93c3db;
         padding: 24px 0;
@@ -383,7 +404,9 @@
     padding-bottom: 25px;
     color: gray;
     font-size: 1em;
-    margin-top: 25px; }
+    margin-top: 25px;
+    font-family: 'source sans pro';
+    letter-spacing: 0.05em; }
     @media screen and (max-width: 767px) {
       .footer .copyright p {
         font-size: 0.8em; } }
@@ -392,10 +415,25 @@
       .footer .copyright p a:hover {
         opacity: 1;
         color: #000; }
-  .footer .right-footer a {
-    padding-right: 30px; }
-    @media screen and (max-width: 767px) {
-      .footer .right-footer a:last-child {
-        padding: 0; } }
+  .footer .right-footer {
+    font-size: 2em; }
+    .footer .right-footer a {
+      padding-right: 30px; }
+      @media screen and (max-width: 767px) {
+        .footer .right-footer a:last-child {
+          padding: 0; } }
+      .footer .right-footer a.in {
+        color: #8ab6d8; }
+      .footer .right-footer a.mail {
+        color: #f0da81;
+        font-weight: 600; }
+      .footer .right-footer a.top {
+        color: #c98c8e; }
+      .footer .right-footer a i {
+        -webkit-transition: 1s ease;
+        -o-transition: 1s ease;
+        transition: 1s ease; }
+        .footer .right-footer a i:hover {
+          color: gray; }
 
 /*# sourceMappingURL=main.css.map */

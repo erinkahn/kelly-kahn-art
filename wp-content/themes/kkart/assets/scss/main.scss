@@ -123,6 +123,9 @@
         text-align: center;
         margin: 19% auto;
         align-items: center;
+        @media screen and (min-width: 1024px){
+            margin: 12% auto;
+        }
         
 
         img{
@@ -217,15 +220,13 @@
         margin: 25% auto;
     }
     @media screen and (min-width: 1024px){
-        margin: 25% auto;
+        margin: 12% auto;
     }
     @media screen and (min-width: 1224px){
         width: 53%;
-        margin: 20% auto;
     }
     @media screen and (min-width: 1440px){
         width: 50%;
-        margin: 17% auto;
     }
     
 
@@ -241,6 +242,7 @@
         align-items: center;
 
         a{
+            transition: 1s ease;
             @media screen and (max-width: 767px){
                 min-width: 230px;
             }
@@ -252,11 +254,18 @@
             padding: 9px 10px;
             margin-top: 30px;
             font-family: 'Lato', serif;
-            font-weight: 300;
+            font-weight: 500;
             font-size: 1.1em;
             letter-spacing: 0.07em;
             text-align: center;
             line-height: 1.6em;
+            @media screen and (min-width: 1024px){
+                min-width: 130px;
+                font-weight: 500;
+            }
+            &:hover{
+                background-color: gray;
+            }
         }
     }
 
@@ -275,6 +284,12 @@
 
         img{
             width: 39%;
+            @media screen and (min-width: 768px){
+                width: 71%;
+            }
+            @media screen and (min-width: 1024px){
+                width: 80%;
+            }
         }
         a{
             background-color: #efd97e;
@@ -297,7 +312,7 @@
 .contactForm{
     @media screen and (max-width: 767px){
         flex-direction: column;
-        margin: 10% auto;
+        margin: 5% auto;
     }
     background-color: #c8dfeb;
     width: 100%;
@@ -307,14 +322,16 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 13% auto;
+    margin: 4% auto;
     @media screen and (min-width: 1224px){
         width: 80%;
         padding: 0 10%;
+        margin: 3% auto;
     }
     @media screen and (min-width: 1440px){
         width: 74%;
         padding: 0 13%;
+        margin: 2% auto;
     }
 
     div{
@@ -380,6 +397,7 @@
                 }
 
                 &.sendButton{
+                    transition: 1s ease;
                     cursor: pointer;
                     background-color: #93c3db;
                     padding: 24px 0;
@@ -421,6 +439,8 @@
             color: gray;
             font-size: 1em;
             margin-top: 25px;
+            font-family: 'source sans pro';
+            letter-spacing: 0.05em;
 
             a{
                 color: gray;
@@ -433,6 +453,7 @@
     }
 
     .right-footer{
+        font-size: 2em;
 
         a{  
             padding-right: 30px;
@@ -442,6 +463,28 @@
                     padding: 0;
                 }
             }
+
+            &.in{
+                color: #8ab6d8;
+            }
+
+            &.mail{
+                color: #f0da81;
+                font-weight: 600;
+                
+            }
+
+            &.top{
+                color: #c98c8e;
+            }
+
+            i{
+                transition: 1s ease;
+                &:hover{
+                    color: gray;
+                }
+            }
+
         }
     }
 }
