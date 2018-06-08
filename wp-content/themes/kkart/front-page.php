@@ -34,8 +34,8 @@
                         $portfolioQuery->the_post(); 
                         ?>
 
-                        <div class="single-post">
-                            <a href="<?php the_permalink(); ?>"> <!-- link to this post-->
+                        <div class="single-post"> <!-- four images portfolios -->
+                            <a class="post-link" href="<?php the_permalink(); ?>"> <!-- link to this post-->
                                 <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
                                 <h3><?php the_title();?></h3>
                             </a>

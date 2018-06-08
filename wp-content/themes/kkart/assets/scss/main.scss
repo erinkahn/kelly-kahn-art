@@ -93,12 +93,34 @@
 
     > li{ //direct child or first lis
         padding-left: 30px;
+        position: relative;
 
         a{
             text-decoration: none;
             color: #000;
+            position: relative;
+
+            &:after{
+                content: '';
+                position: absolute;
+                width: 0;  // 0 to 100 in after
+                height: 3px;
+                display: block;
+                margin-top: 5px;
+                right: 0;
+                background-color: #72adcc;
+                transition: width .2s ease;
+            }
+
             &:hover{
                 color: #72adcc;
+
+                &:after{
+                    width: 100%; // from 0 to 100
+                    left: 0; // left to right grows
+                    background: #72adcc;
+                }
+                
             }
 
         }
@@ -172,6 +194,7 @@
         flex-wrap: wrap;
 
         .single-post{
+            transition: 1s ease-in-out;
             position: relative;
             @media screen and (max-width: 767px){
                 width: 100%;
@@ -183,28 +206,145 @@
                 width: 25%;
             }
 
-            img{
-                width: 100%;
-            }
-
-            a{
+            .post-link{
+                position: relative;
                 width: 25%;
                 font-family: 'Lato', serif;
                 text-decoration: none; 
-                color: #fff;
-                font-weight: 300;
                 font-size: 1.3em;
-                background-color: rgba(0,0,0,0.8);
-                padding: 49px 0px;
                 letter-spacing: 0.07em;
                 text-align: center;
-                line-height: 1.6em;
+
+                
+
+                h3{
+                    padding: 6px 57px;
+                    position: absolute;
+                    background-color: rgba(0,0,0,0.6);
+                    color: #fff;
+                    font-weight: 300;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    bottom: 24px;
+                    white-space: nowrap;
+                    text-align: center;
+                    transition: .4s ease-in-out
+                }
+
+                img{
+                    width: 100%;
+                    position: relative;
+                    transition: .8s ease-in-out;
+                }
+
+                &:hover{
+                    img{
+                        opacity: 0;
+
+                    }
+                  
+                    h3{
+                        @media screen and (min-width: 550px){
+                            bottom: 50px;
+                        }
+                        @media screen and (min-width: 768px){
+                            bottom: 31px;
+                        }
+                        @media screen and (min-width: 1024px){
+                            bottom: 15px;
+                        }
+                        @media screen and (min-width: 1224px){
+                            bottom: 19px;
+                        }
+                        background-color: transparent;
+                        
+                    }
+                }
+
             }
         }
 
     }
 
 }
+
+
+
+.single-post{
+
+    &:first-child{
+        
+        .post-link:hover{
+            background-image: url(../img/portraits-hover.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            background-position: 100% auto;
+            height: 0;
+            padding-bottom: 119%;
+            left: 50%;
+            transform: translateX(-50%);
+            position: absolute;
+            z-index: 1;
+
+        }
+    }
+
+    &:nth-child(2){
+        
+        .post-link:hover{
+            background-image: url(../img/petPortraits-hover.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            background-position: 100% auto;
+            height: 0;
+            padding-bottom: 119%;
+            left: 50%;
+            transform: translateX(-50%);
+            position: absolute;
+            z-index: 1;
+        }
+    }
+
+    &:nth-child(3){
+        
+        .post-link:hover{
+            background-image: url(../img/landscapes-hover.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            background-position: 100% auto;
+            height: 0;
+            padding-bottom: 119%;
+            left: 50%;
+            transform: translateX(-50%);
+            position: absolute;
+            z-index: 1;
+        }
+
+    }
+
+    &:last-child{
+        
+        .post-link:hover{
+            background-image: url(../img/stillLifes-hover.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            background-position: 100% auto;
+            height: 0;
+            padding-bottom: 119%;
+            left: 50%;
+            transform: translateX(-50%);
+            position: absolute;
+            z-index: 1;
+        }
+
+    }
+}
+
+
 
 .iconIllustrations{
     align-items: center;
@@ -443,11 +583,33 @@
             letter-spacing: 0.05em;
 
             a{
-                color: gray;
+                color: #72adcc;
+                position: relative;
+                text-decoration: none;
+                
+                &:after{
+                    content: '';
+                    position: absolute;
+                    width: 0;  // 0 to 100 in after
+                    height: 3px;
+                    display: block;
+                    margin-top: 5px;
+                    right: 0;
+                    background-color: #72adcc;
+                    transition: width .2s ease;
+                }
+
                 &:hover{
                     opacity: 1;
                     color: #000;
+
+                    &:after{
+                        width: 100%; // from 0 to 100
+                        left: 0; // left to right grows
+                        background: #72adcc;
+                    }
                 }
+                   
             }
         }
     }
