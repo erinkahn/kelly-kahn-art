@@ -75,11 +75,13 @@ add_action( 'init', 'custom_post_type', 0 );
 
 
 
-
+// these link to javascript files - you must register then enqueue script
 add_action( 'wp_enqueue_scripts', 'kkart_load_scripts' );
 function kkart_load_scripts()
 {
 	wp_enqueue_script( 'jquery' );
+	wp_register_script( 'main-js', get_template_directory_uri() . '/assets/js/main.js', false, null, true);
+	wp_enqueue_script( 'main-js' );
 }
 
 
