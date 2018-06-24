@@ -255,12 +255,24 @@
         -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
         transform: translateX(-50%);
-        bottom: 24px;
+        bottom: 31px;
         white-space: nowrap;
         text-align: center;
         -webkit-transition: .4s ease-in-out;
         -o-transition: .4s ease-in-out;
         transition: .4s ease-in-out; }
+        @media screen and (min-width: 550px) {
+          .categories .portfolio-categories .single-post .post-link h3 {
+            bottom: 50px; } }
+        @media screen and (min-width: 768px) {
+          .categories .portfolio-categories .single-post .post-link h3 {
+            bottom: 31px; } }
+        @media screen and (min-width: 1024px) {
+          .categories .portfolio-categories .single-post .post-link h3 {
+            bottom: 15px; } }
+        @media screen and (min-width: 1224px) {
+          .categories .portfolio-categories .single-post .post-link h3 {
+            bottom: 19px; } }
       .categories .portfolio-categories .single-post .post-link img {
         width: 100%;
         position: relative;
@@ -271,18 +283,6 @@
         opacity: 0; }
       .categories .portfolio-categories .single-post .post-link:hover h3 {
         background-color: transparent; }
-        @media screen and (min-width: 550px) {
-          .categories .portfolio-categories .single-post .post-link:hover h3 {
-            bottom: 50px; } }
-        @media screen and (min-width: 768px) {
-          .categories .portfolio-categories .single-post .post-link:hover h3 {
-            bottom: 31px; } }
-        @media screen and (min-width: 1024px) {
-          .categories .portfolio-categories .single-post .post-link:hover h3 {
-            bottom: 15px; } }
-        @media screen and (min-width: 1224px) {
-          .categories .portfolio-categories .single-post .post-link:hover h3 {
-            bottom: 19px; } }
 
 .single-post:first-child .post-link:hover {
   background-image: url(../img/portraits-hover.png);

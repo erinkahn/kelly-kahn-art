@@ -300,10 +300,22 @@
                     font-weight: 300;
                     left: 50%;
                     transform: translateX(-50%);
-                    bottom: 24px;
+                    bottom: 31px;
                     white-space: nowrap;
                     text-align: center;
-                    transition: .4s ease-in-out
+                    transition: .4s ease-in-out;
+                    @media screen and (min-width: 550px){
+                        bottom: 50px;
+                    }
+                    @media screen and (min-width: 768px){
+                        bottom: 31px;
+                    }
+                    @media screen and (min-width: 1024px){
+                        bottom: 15px;
+                    }
+                    @media screen and (min-width: 1224px){
+                        bottom: 19px;
+                    }
                 }
 
                 img{
@@ -319,18 +331,7 @@
                     }
                   
                     h3{
-                        @media screen and (min-width: 550px){
-                            bottom: 50px;
-                        }
-                        @media screen and (min-width: 768px){
-                            bottom: 31px;
-                        }
-                        @media screen and (min-width: 1024px){
-                            bottom: 15px;
-                        }
-                        @media screen and (min-width: 1224px){
-                            bottom: 19px;
-                        }
+                       
                         background-color: transparent;
                         
                     }
