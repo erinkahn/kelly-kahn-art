@@ -54,9 +54,9 @@
 
 
     <div class="iconIllustrations">
-        <div class="shop">
-            <img src="<?php the_field('purse_image');?>" alt="purse">
-            <a href="<?php the_field('shop_url');?>">Shop</a>
+        <div class="about">
+            <img src="<?php the_field('about_image');?>" alt="about">
+            <a href="<?php the_field('about_url');?>">About</a>
         </div>
 
         <div class="fees">

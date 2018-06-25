@@ -1,19 +1,17 @@
 <?php
 /*
-Template Name: Page Classes
+Template Name: Page About
 */
 ?>
 
+<section class="about">
 
 <?php get_header();?>
-
-<section class="classes">
-
-classes
+about
 
 
 
-    <div class="contactForm">
+ <div class="contactForm">
 		<div class="form-text">
 			<p>Have you been wanting a new portrait of your family to hang up in your home? Do you want to improve your art skills by taking a private art class?</p>
 			<h1>Contact Kelly.</h1>

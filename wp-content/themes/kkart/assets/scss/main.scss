@@ -429,9 +429,10 @@
     flex-direction: column;
     margin: 30% auto;
     align-items: center;
+    align-content: center;
     
     @media screen and (min-width: 768px){
-        width: 72%;
+        width: 60%;
         flex-direction: row;
         margin: 25% auto;
     }
@@ -446,7 +447,7 @@
     }
     
 
-    .shop, .fees, .classes{
+    .about, .fees, .classes{
         @media screen and (max-width: 767px){
             margin-top: 60px;
         }
@@ -485,11 +486,8 @@
         }
     }
 
-    .shop{
+    .about{
 
-        img{
-            width: 48%;
-        }
         a{
             background-color: #8ab6d8;
         }
@@ -498,25 +496,12 @@
 
     .fees{
 
-        img{
-            width: 39%;
-            @media screen and (min-width: 768px){
-                width: 71%;
-            }
-            @media screen and (min-width: 1024px){
-                width: 80%;
-            }
-        }
         a{
             background-color: #efd97e;
         }
     }
 
     .classes{
-
-        img{
-            width: 53%;
-        }
 
         a{
             background-color: #c68688;

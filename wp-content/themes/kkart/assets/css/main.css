@@ -359,10 +359,12 @@
   -ms-flex-direction: column;
   flex-direction: column;
   margin: 30% auto;
-  align-items: center; }
+  align-items: center;
+  -ms-flex-line-pack: center;
+  align-content: center; }
   @media screen and (min-width: 768px) {
     .iconIllustrations {
-      width: 72%;
+      width: 60%;
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -377,7 +379,7 @@
   @media screen and (min-width: 1440px) {
     .iconIllustrations {
       width: 50%; } }
-  .iconIllustrations .shop, .iconIllustrations .fees, .iconIllustrations .classes {
+  .iconIllustrations .about, .iconIllustrations .fees, .iconIllustrations .classes {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -392,9 +394,9 @@
     -ms-flex-align: center;
     align-items: center; }
     @media screen and (max-width: 767px) {
-      .iconIllustrations .shop, .iconIllustrations .fees, .iconIllustrations .classes {
+      .iconIllustrations .about, .iconIllustrations .fees, .iconIllustrations .classes {
         margin-top: 60px; } }
-    .iconIllustrations .shop a, .iconIllustrations .fees a, .iconIllustrations .classes a {
+    .iconIllustrations .about a, .iconIllustrations .fees a, .iconIllustrations .classes a {
       -webkit-transition: 1s ease;
       -o-transition: 1s ease;
       transition: 1s ease;
@@ -416,30 +418,18 @@
       text-align: center;
       line-height: 1.6em; }
       @media screen and (max-width: 767px) {
-        .iconIllustrations .shop a, .iconIllustrations .fees a, .iconIllustrations .classes a {
+        .iconIllustrations .about a, .iconIllustrations .fees a, .iconIllustrations .classes a {
           min-width: 230px; } }
       @media screen and (min-width: 1024px) {
-        .iconIllustrations .shop a, .iconIllustrations .fees a, .iconIllustrations .classes a {
+        .iconIllustrations .about a, .iconIllustrations .fees a, .iconIllustrations .classes a {
           min-width: 130px;
           font-weight: 500; } }
-      .iconIllustrations .shop a:hover, .iconIllustrations .fees a:hover, .iconIllustrations .classes a:hover {
+      .iconIllustrations .about a:hover, .iconIllustrations .fees a:hover, .iconIllustrations .classes a:hover {
         background-color: gray; }
-  .iconIllustrations .shop img {
-    width: 48%; }
-  .iconIllustrations .shop a {
+  .iconIllustrations .about a {
     background-color: #8ab6d8; }
-  .iconIllustrations .fees img {
-    width: 39%; }
-    @media screen and (min-width: 768px) {
-      .iconIllustrations .fees img {
-        width: 71%; } }
-    @media screen and (min-width: 1024px) {
-      .iconIllustrations .fees img {
-        width: 80%; } }
   .iconIllustrations .fees a {
     background-color: #efd97e; }
-  .iconIllustrations .classes img {
-    width: 53%; }
   .iconIllustrations .classes a {
     background-color: #c68688; }
 
