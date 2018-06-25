@@ -290,8 +290,6 @@
                 letter-spacing: 0.07em;
                 text-align: center;
 
-                
-
                 h3{
                     padding: 6px 57px;
                     position: absolute;
@@ -710,4 +708,39 @@
 
         }
     }
+}
+
+
+
+
+#archive-page{
+
+    .categories{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+
+        .portfolio-categories{
+            width: 100%;
+
+            @media screen and (min-width: 768px){
+                width: 50%;
+            }
+            @media screen and (min-width: 1024px){
+                width: 25%;
+            }
+            
+
+            .single-post{
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+
+.contactForm.archive{
+    margin-top: -3px;
+    margin-bottom: 4%;
 }

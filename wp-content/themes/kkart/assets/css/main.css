@@ -618,4 +618,26 @@
         .footer .right-footer a i:hover {
           color: gray; }
 
+#archive-page .categories {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  #archive-page .categories .portfolio-categories {
+    width: 100%; }
+    @media screen and (min-width: 768px) {
+      #archive-page .categories .portfolio-categories {
+        width: 50%; } }
+    @media screen and (min-width: 1024px) {
+      #archive-page .categories .portfolio-categories {
+        width: 25%; } }
+    #archive-page .categories .portfolio-categories .single-post {
+      width: 100%; }
+
+.contactForm.archive {
+  margin-top: -3px;
+  margin-bottom: 4%; }
+
 /*# sourceMappingURL=main.css.map */
