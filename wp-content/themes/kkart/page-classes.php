@@ -9,7 +9,11 @@ Template Name: Page Classes
 
 <section class="classes">
 
-classes
+<h3>Private Art Classes</h3>
+
+<p>Progressive art class for students with
+emphasis to be on creative, fun drawing and painting skills to expose
+a their mind to practical techniques that can be used forever.</p>
 
 
 

@@ -1,14 +1,9 @@
 <?php get_header(); ?>
 	
 <section id="archive-page" role="main">
-
-
-	<!-- portfolio content -->
 	
 	<div class="categories">
-
-		
-			
+		<!-- loop through all posts/portfolio categories and show all on one page -->	
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 			<div class="portfolio-categories">
@@ -28,8 +23,6 @@
 	</div>
 			
 		
-
-
 
 	<div class="contactForm archive">
 		<div class="form-text">

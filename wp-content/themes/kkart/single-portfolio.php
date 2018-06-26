@@ -1,27 +1,48 @@
 <?php get_header(); ?>
 
 
-<section class="portfolio-single-category">
-
-	<h1><?php the_title();?></h1>
+<section class="single-portfolio">
 
 
-	<!-- portfolio gallery images  -->
+	<!-- ACF - advanced custom fields repeater -->
+	<!-- https://www.advancedcustomfields.com/resources/repeater/ -->
 
-	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+	<?php
 
-		<div class="image-gallery">
+	// check if the repeater field has rows of data
+	if( have_rows('portfolio_image') ):
+
+		// loop through the rows of data
+		while ( have_rows('portfolio_image') ) : the_row(); ?>
+
+			<!-- display a sub field value -->
+			<div class="galleryImages">
+				<div class="image-container">
+					<img src="<?php the_sub_field('portfolio_image');?>" alt="">
+				</div>
+
+				<div class="image-title">
+					<h2> <?php the_sub_field('portfolio_title');?> </h2>
+					<p> <?php the_sub_field('portfolio_subtitle'); ?> </p>
+				</div>
+			</div>
 			
-			<img src="<?php echo get_sub_field('portfolio_image'); ?>" alt="">
-			<h2><?php echo get_sub_field('portfolio_title'); ?></h2>
-			<h3><?php echo get_sub_field('portfolio_image'); ?></h3>
+
+		<?php endwhile;
+
+	else :
+
+		// no rows found
+
+	endif;
+
+	?>
+
+
+
 	
-		</div> 
-		
-	<?php endwhile; endif; ?>
 
 
-		
 	<div class="contactForm">
 		<div class="form-text">
 			<p>Have you been wanting a new portrait of your family to hang up in your home? Do you want to improve your art skills by taking a private art class?</p>
