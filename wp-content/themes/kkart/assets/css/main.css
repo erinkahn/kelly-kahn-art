@@ -688,7 +688,7 @@
         .footer .right-footer a i:hover {
           color: gray; }
 
-.about {
+.about-page {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -697,53 +697,116 @@
   -ms-flex-pack: center;
   justify-content: center; }
   @media screen and (max-width: 767px) {
-    .about {
+    .about-page {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
       flex-direction: column;
       width: 80%; } }
   @media screen and (min-width: 768px) {
-    .about {
+    .about-page {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
       -ms-flex-direction: row;
       flex-direction: row;
       max-width: 87%;
-      margin: 90px auto; } }
+      margin: 138px auto; } }
   @media screen and (min-width: 1024px) {
-    .about {
+    .about-page {
       max-width: 70%; } }
   @media screen and (min-width: 1224px) {
-    .about {
+    .about-page {
       max-width: 58%; } }
   @media screen and (min-width: 1440px) {
-    .about {
+    .about-page {
       max-width: 48%; } }
-  .about .kelly {
+  .about-page .kelly {
     margin-right: 7%; }
     @media screen and (max-width: 767px) {
-      .about .kelly {
+      .about-page .kelly {
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
         max-width: 67%;
-        margin: 30px auto; }
-        .about .kelly img {
+        margin: 45px auto; }
+        .about-page .kelly img {
           width: 100%; } }
+  .about-page .aboutText {
+    font-family: 'Source Sans Pro', sans-serif; }
+    @media screen and (max-width: 767px) {
+      .about-page .aboutText {
+        text-align: center; } }
+    .about-page .aboutText h3 {
+      font-size: 1.4em;
+      font-weight: 700;
+      margin-bottom: 20px;
+      letter-spacing: 0.08em; }
+    .about-page .aboutText p {
+      margin-bottom: 30px;
+      line-height: 1.8em; }
+      @media screen and (max-width: 1023px) {
+        .about-page .aboutText p {
+          line-height: 1.5em; } }
+
+.fees-page {
+  font-family: 'Source Sans Pro', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 70%; }
   @media screen and (max-width: 767px) {
-    .about .aboutText {
-      text-align: center; } }
-  .about .aboutText h3 {
-    font-size: 1.4em;
-    font-weight: 700;
-    margin-bottom: 20px;
-    letter-spacing: 0.08em; }
-  .about .aboutText p {
-    margin-bottom: 30px;
-    line-height: 1.8em; }
-    @media screen and (max-width: 1023px) {
-      .about .aboutText p {
-        line-height: 1.5em; } }
+    .fees-page {
+      width: 80%; } }
+  .fees-page .fees-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center; }
+    .fees-page .fees-title h2 {
+      font-size: 1.4em;
+      font-weight: 700;
+      margin-bottom: 20px;
+      letter-spacing: 0.08em; }
+    .fees-page .fees-title p {
+      line-height: 1.5em; }
+
+.portrait-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin: 0 auto; }
+  @media screen and (max-width: 767px) {
+    .portrait-images {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
+  .portrait-images .pet {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start; }
+  .portrait-images .portrait {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end; }
 
 /*# sourceMappingURL=main.css.map */

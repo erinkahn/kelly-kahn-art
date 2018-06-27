@@ -811,7 +811,7 @@
 
 
 
-.about{
+.about-page{
     display: flex;
     margin: 0 auto;
     justify-content: center;
@@ -822,7 +822,7 @@
     @media screen and (min-width: 768px){
         flex-direction: row;
         max-width: 87%;
-        margin: 90px auto;
+        margin: 138px auto;
     }
     @media screen and (min-width: 1024px){
         max-width: 70%;
@@ -838,7 +838,7 @@
         @media screen and (max-width: 767px){
             justify-content: center;
             max-width: 67%;
-            margin: 30px auto;
+            margin: 45px auto;
 
             img{
                 width: 100%;
@@ -848,6 +848,7 @@
     }
 
     .aboutText{
+        font-family: 'Source Sans Pro', sans-serif;
         @media screen and (max-width: 767px){
             text-align: center;
         }
@@ -867,5 +868,83 @@
             margin-bottom: 30px;
             line-height: 1.8em;
         }
+    }
+}
+
+
+
+.fees-page{
+    font-family: 'Source Sans Pro', sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    @media screen and (max-width: 767px){
+        width: 80%;
+    }
+    width: 70%;
+
+    .fees-title{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        h2{
+            font-size: 1.4em;
+            font-weight: 700;
+            margin-bottom: 20px;
+            letter-spacing: 0.08em;
+        }
+
+        p{
+            line-height: 1.5em;
+        }
+    }
+}
+
+
+.portrait-images{
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: 767px){
+        flex-direction: column;
+    }
+    flex-direction: row;
+    margin: 0 auto;
+
+    .pet{
+        justify-content: flex-start;
+
+        h3{
+
+        }
+
+        img{
+
+        }
+    }
+
+    .portrait{
+        justify-content: flex-end;
+
+        h3{
+
+        }
+
+        img{
+
+        }
+    }
+}
+
+
+.agreement{
+
+    h4{
+
+    }
+
+    p{
+        
     }
 }

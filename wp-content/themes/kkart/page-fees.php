@@ -7,14 +7,32 @@ Template Name: Page Fees
 
 <?php get_header();?>
 
-<section class="fees">
+<section class="fees-page">
 
 
+	<div class="fees-title">
+		<h2><?php the_field('fees_header');?></h2>
+		<p><?php the_field('fees_text');?></p>
+    </div>
 
-fees
+    <div class="portrait-images">
+		<div class="pet">
+			<h3>pet portrait fees</h3>
+			<img src="<?php the_field('pet_fees');?>" alt="">
+		</div>
+		<div class="portrait">
+			<h3>portrait fees</h3>
+			<img src="<?php the_field('portrait_fees');?>" alt="">
+		</div>
+	</div>
+	
+	<div class="agreement">
+		<h4><?php the_field('agreement_header');?></h4>
+		<p><?php the_field('agreement_text');?></p>
+	</div>
 
 
-
+</section>
 
     <div class="contactForm">
 		<div class="form-text">
@@ -31,7 +49,7 @@ fees
 		</div>
 	</div>
 
-</section>
+
 
 
 

@@ -7,7 +7,7 @@ Template Name: Page About
 
 <?php get_header();?>
 
-<section class="about">
+<section class="about-page">
 
 
     <div class="kelly">
