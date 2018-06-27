@@ -659,14 +659,14 @@
 .single-portfolio{
     display: flex;
     flex-wrap: wrap;
-    
+    // max-width: 87%;
+    // margin: 0 auto;
 
     .galleryImages{
         margin: 0 auto;
         display: flex;
         justify-content: center;
         padding: 19px 0;
-
 
         .image-container{
             position: relative;
@@ -706,6 +706,10 @@
             }
         }
     }
+
+    .footer{
+        width:100%;
+    }
 }
 
 
@@ -720,7 +724,6 @@
     flex-direction: row;
     justify-content: space-between;
     margin: auto 6%;
-    width: 100%;
     padding-bottom: 30px;
     align-items: center;
 
