@@ -439,6 +439,7 @@
   font-family: 'lato';
   font-weight: 300;
   line-height: 1.9em;
+  text-align: left;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -542,6 +543,72 @@
         .contactForm .form-inputs form input.sendButton:hover {
           background-color: #cd9394; }
 
+#archive-page .categories {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  #archive-page .categories .portfolio-categories {
+    width: 100%; }
+    @media screen and (min-width: 768px) {
+      #archive-page .categories .portfolio-categories {
+        width: 50%; } }
+    @media screen and (min-width: 1024px) {
+      #archive-page .categories .portfolio-categories {
+        width: 25%; } }
+    #archive-page .categories .portfolio-categories .single-post {
+      width: 100%; }
+
+.contactForm.archive {
+  margin-top: -3px;
+  margin-bottom: 4%; }
+
+.single-portfolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .single-portfolio .galleryImages {
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 19px 0; }
+    .single-portfolio .galleryImages .image-container {
+      position: relative;
+      font-size: 1.4em;
+      color: transparent;
+      -webkit-transition: .2s ease-in-out;
+      -o-transition: .2s ease-in-out;
+      transition: .2s ease-in-out;
+      white-space: nowrap; }
+      .single-portfolio .galleryImages .image-container h2 {
+        position: absolute;
+        left: 50%;
+        -webkit-transform: translate(-50%, -400%);
+        -ms-transform: translate(-50%, -400%);
+        transform: translate(-50%, -400%);
+        letter-spacing: 0.08em;
+        text-align: center; }
+      .single-portfolio .galleryImages .image-container p {
+        position: absolute;
+        left: 50%;
+        -webkit-transform: translate(-50%, -260%);
+        -ms-transform: translate(-50%, -260%);
+        transform: translate(-50%, -260%);
+        letter-spacing: 0.08em;
+        text-align: center; }
+      .single-portfolio .galleryImages .image-container:hover h2, .single-portfolio .galleryImages .image-container:hover p {
+        color: #fff;
+        padding: 3px 8px;
+        background-color: rgba(0, 0, 0, 0.6); }
+
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -554,6 +621,7 @@
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin: auto 6%;
+  width: 100%;
   padding-bottom: 30px;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -617,55 +685,5 @@
         transition: 1s ease; }
         .footer .right-footer a i:hover {
           color: gray; }
-
-#archive-page .categories {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
-  #archive-page .categories .portfolio-categories {
-    width: 100%; }
-    @media screen and (min-width: 768px) {
-      #archive-page .categories .portfolio-categories {
-        width: 50%; } }
-    @media screen and (min-width: 1024px) {
-      #archive-page .categories .portfolio-categories {
-        width: 25%; } }
-    #archive-page .categories .portfolio-categories .single-post {
-      width: 100%; }
-
-.contactForm.archive {
-  margin-top: -3px;
-  margin-bottom: 4%; }
-
-.single-portfolio .galleryImages {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  width: 90%; }
-  .single-portfolio .galleryImages .image-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-  .single-portfolio .galleryImages .image-title {
-    position: relative; }
-    .single-portfolio .galleryImages .image-title h2 {
-      position: absolute;
-      left: 50%;
-      -webkit-transform: translateX(-50%) translateY(-50%);
-      -ms-transform: translateX(-50%) translateY(-50%);
-      transform: translateX(-50%) translateY(-50%);
-      top: 50%;
-      color: #fff;
-      font-size: 2em;
-      background-color: black;
-      white-space: nowrap;
-      text-align: center; }
 
 /*# sourceMappingURL=main.css.map */

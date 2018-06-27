@@ -19,9 +19,6 @@
 			<div class="galleryImages">
 				<div class="image-container">
 					<img src="<?php the_sub_field('portfolio_image');?>" alt="">
-				</div>
-
-				<div class="image-title">
 					<h2> <?php the_sub_field('portfolio_title');?> </h2>
 					<p> <?php the_sub_field('portfolio_subtitle'); ?> </p>
 				</div>
