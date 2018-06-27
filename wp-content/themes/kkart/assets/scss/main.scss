@@ -808,3 +808,64 @@
         }
     }
 }
+
+
+
+.about{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    @media screen and (max-width: 767px){
+        flex-direction: column;
+        width: 80%;  
+    }
+    @media screen and (min-width: 768px){
+        flex-direction: row;
+        max-width: 87%;
+        margin: 90px auto;
+    }
+    @media screen and (min-width: 1024px){
+        max-width: 70%;
+    }
+    @media screen and (min-width: 1224px){
+        max-width: 58%;
+    }
+    @media screen and (min-width: 1440px){
+        max-width: 48%;
+    }
+
+    .kelly{
+        @media screen and (max-width: 767px){
+            justify-content: center;
+            max-width: 67%;
+            margin: 30px auto;
+
+            img{
+                width: 100%;
+            }
+        }
+        margin-right: 7%;
+    }
+
+    .aboutText{
+        @media screen and (max-width: 767px){
+            text-align: center;
+        }
+        
+
+        h3{
+            font-size: 1.4em;
+            font-weight: 700;
+            margin-bottom: 20px;
+            letter-spacing: 0.08em;
+        }
+
+        p{
+            @media screen and (max-width: 1023px){
+                line-height: 1.5em;
+            }
+            margin-bottom: 30px;
+            line-height: 1.8em;
+        }
+    }
+}

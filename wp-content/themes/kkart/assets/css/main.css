@@ -688,4 +688,62 @@
         .footer .right-footer a i:hover {
           color: gray; }
 
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  @media screen and (max-width: 767px) {
+    .about {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      width: 80%; } }
+  @media screen and (min-width: 768px) {
+    .about {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      max-width: 87%;
+      margin: 90px auto; } }
+  @media screen and (min-width: 1024px) {
+    .about {
+      max-width: 70%; } }
+  @media screen and (min-width: 1224px) {
+    .about {
+      max-width: 58%; } }
+  @media screen and (min-width: 1440px) {
+    .about {
+      max-width: 48%; } }
+  .about .kelly {
+    margin-right: 7%; }
+    @media screen and (max-width: 767px) {
+      .about .kelly {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        max-width: 67%;
+        margin: 30px auto; }
+        .about .kelly img {
+          width: 100%; } }
+  @media screen and (max-width: 767px) {
+    .about .aboutText {
+      text-align: center; } }
+  .about .aboutText h3 {
+    font-size: 1.4em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: 0.08em; }
+  .about .aboutText p {
+    margin-bottom: 30px;
+    line-height: 1.8em; }
+    @media screen and (max-width: 1023px) {
+      .about .aboutText p {
+        line-height: 1.5em; } }
+
 /*# sourceMappingURL=main.css.map */
