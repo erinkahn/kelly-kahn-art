@@ -4,9 +4,11 @@ Template Name: Page About
 */
 ?>
 
-<section class="about">
 
 <?php get_header();?>
+
+<section class="about">
+
 
 
     <h3>About the artist</h3>
