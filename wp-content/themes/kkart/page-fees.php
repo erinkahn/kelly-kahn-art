@@ -17,18 +17,56 @@ Template Name: Page Fees
 
     <div class="portrait-images">
 		<div class="pet">
-			<h3>pet portrait fees</h3>
-			<img src="<?php the_field('pet_fees');?>" alt="">
+			<h3>Pet Portrait Fees</h3>
+			<img src="<?php the_field('pet_fees');?>" alt="pet-chart">
 		</div>
 		<div class="portrait">
-			<h3>portrait fees</h3>
-			<img src="<?php the_field('portrait_fees');?>" alt="">
+			<h3>Portrait Fees</h3>
+			<img src="<?php the_field('portrait_fees');?>" alt="portrait-chart">
 		</div>
 	</div>
 	
 	<div class="agreement">
-		<h4><?php the_field('agreement_header');?></h4>
-		<p><?php the_field('agreement_text');?></p>
+		<div>
+			<h4><?php the_field('agreement_title');?></h4>
+			<p><?php the_field('agreement_text');?></p>
+		</div>
+		
+		<div>
+			<h4><?php the_field('agreement_title_2');?></h4>
+			<p><?php the_field('agreement_text_2');?></p>
+		</div>
+		
+		<div>
+			<h4><?php the_field('agreement_title_3');?></h4>
+			<p><?php the_field('agreement_text_3');?></p>
+		</div>
+
+		<div>	
+			<h4><?php the_field('agreement_title_4');?></h4>
+			<p><?php the_field('agreement_text_4');?></p>
+		</div>
+		
+		<div>
+			<h4><?php the_field('agreement_title_5');?></h4>
+			<p><?php the_field('agreement_text_5');?></p>
+		</div>
+			
+		<div>
+			<h4><?php the_field('agreement_title_6');?></h4>
+			<p><?php the_field('agreement_text_6');?></p>
+		</div>
+
+		<div>
+			<h4><?php the_field('agreement_title_7');?></h4>
+			<p><?php the_field('agreement_text_7');?></p>
+		</div>
+			
+		<div>
+			<h4><?php the_field('agreement_title_8');?></h4>
+			<p><?php the_field('agreement_text_8');?></p>
+		</div>
+				
 	</div>
 
 

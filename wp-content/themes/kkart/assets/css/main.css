@@ -760,11 +760,19 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  margin: 0 auto;
-  width: 70%; }
+  margin: 0 auto; }
   @media screen and (max-width: 767px) {
     .fees-page {
       width: 80%; } }
+  @media screen and (min-width: 768px) {
+    .fees-page {
+      width: 60%; } }
+  @media screen and (min-width: 1024px) {
+    .fees-page {
+      width: 52%; } }
+  @media screen and (min-width: 1224px) {
+    .fees-page {
+      width: 48%; } }
   .fees-page .fees-title {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -773,14 +781,19 @@
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    text-align: center; }
+    text-align: center;
+    margin: 0 auto; }
     .fees-page .fees-title h2 {
       font-size: 1.4em;
-      font-weight: 700;
-      margin-bottom: 20px;
-      letter-spacing: 0.08em; }
+      white-space: nowrap;
+      font-weight: 600;
+      margin: 60px 0 14px 0;
+      letter-spacing: 0.04em;
+      line-height: 1.2em; }
     .fees-page .fees-title p {
-      line-height: 1.5em; }
+      line-height: 1.5em;
+      text-align: center;
+      padding-bottom: 17%; }
 
 .portrait-images {
   display: -webkit-box;
@@ -789,24 +802,48 @@
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  margin: 0 auto; }
+  text-align: center; }
   @media screen and (max-width: 767px) {
     .portrait-images {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
-      flex-direction: column; } }
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      text-align: center; } }
   .portrait-images .pet {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
-    justify-content: flex-start; }
+    justify-content: flex-start;
+    margin-bottom: 18%; }
+    .portrait-images .pet h3 {
+      font-weight: 600;
+      font-size: 1.4em;
+      margin-bottom: 10px; }
   .portrait-images .portrait {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end; }
+    .portrait-images .portrait h3 {
+      font-weight: 600;
+      font-size: 1.4em;
+      margin-bottom: 10px; }
+
+.agreement {
+  padding-bottom: 52px; }
+  @media screen and (max-width: 767px) {
+    .agreement {
+      text-align: center;
+      margin-top: 18%; } }
+  .agreement div {
+    margin-bottom: 45px; }
+    .agreement div h4 {
+      font-weight: 600;
+      font-size: 1.1em;
+      margin-bottom: 10px; }
+    .agreement div p {
+      line-height: 1.5em; }
 
 /*# sourceMappingURL=main.css.map */
