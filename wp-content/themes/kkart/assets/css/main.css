@@ -797,7 +797,7 @@
       padding-bottom: 17%;
       font-weight: 300; }
 
-.portrait-images {
+.portrait-prices {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -805,8 +805,8 @@
   -ms-flex-pack: justify;
   justify-content: space-between;
   text-align: center; }
-  @media screen and (max-width: 767px) {
-    .portrait-images {
+  @media screen and (max-width: 940px) {
+    .portrait-prices {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -815,20 +815,20 @@
       -ms-flex-align: center;
       align-items: center;
       text-align: center; } }
-  .portrait-images .pet {
+  .portrait-prices .pet {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
     margin-bottom: 18%; }
-    .portrait-images .pet h3 {
+    .portrait-prices .pet h3 {
       font-weight: 400;
       font-size: 1.4em;
       margin-bottom: 10px; }
-  .portrait-images .portrait {
+  .portrait-prices .portrait {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end; }
-    .portrait-images .portrait h3 {
+    .portrait-prices .portrait h3 {
       font-weight: 400;
       font-size: 1.4em;
       margin-bottom: 10px; }
@@ -848,5 +848,26 @@
     .agreement div p {
       line-height: 1.5em;
       font-weight: 300; }
+
+.portrait-fees, .pet-fees {
+  font-family: 'Source Sans Pro', sans-serif;
+  border-collapse: collapse;
+  width: 100%; }
+  .portrait-fees td, .portrait-fees th, .pet-fees td, .pet-fees th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8.9px;
+    white-space: nowrap; }
+    @media screen and (min-width: 1024px) {
+      .portrait-fees td, .portrait-fees th, .pet-fees td, .pet-fees th {
+        padding: 12px; } }
+  .portrait-fees tr:nth-child(even), .pet-fees tr:nth-child(even) {
+    background-color: #bcd3e5; }
+
+.pet-fees td, .pet-fees th {
+  padding: 10px; }
+  @media screen and (min-width: 1024px) {
+    .pet-fees td, .pet-fees th {
+      padding: 12px; } }
 
 /*# sourceMappingURL=main.css.map */
