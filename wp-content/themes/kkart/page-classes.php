@@ -9,13 +9,25 @@ Template Name: Page Classes
 
 <section class="classes">
 
-<h3>Private Art Classes</h3>
+	<div class="class-title">
+		<h2><?php the_field('class_header');?></h2>
+		<p><?php the_field('class_text');?></p>
+	</div>
 
-<p>Progressive art class for students with
-emphasis to be on creative, fun drawing and painting skills to expose
-a their mind to practical techniques that can be used forever.</p>
+
+	<div class="class-images">
+		<div class="big-image">
+			<img src="<?php the_field('class_image');?>" alt="class">
+		</div>
+		<div class="three-images">
+			<img src="<?php the_field('class_image_2');?>" alt="class">
+			<img src="<?php the_field('class_image_3');?>" alt="class">
+			<img src="<?php the_field('class_image_4');?>" alt="class">
+		</div>
+	</div>
 
 
+</section>
 
     <div class="contactForm">
 		<div class="form-text">
@@ -32,9 +44,6 @@ a their mind to practical techniques that can be used forever.</p>
 		</div>
 	</div>
 
-
-
-</section>
 
 
 
