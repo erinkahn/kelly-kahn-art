@@ -768,12 +768,12 @@
   @media screen and (min-width: 768px) {
     .fees-page {
       width: 60%; } }
-  @media screen and (min-width: 1024px) {
-    .fees-page {
-      width: 52%; } }
   @media screen and (min-width: 1224px) {
     .fees-page {
-      width: 48%; } }
+      width: 51%; } }
+  @media screen and (min-width: 1440px) {
+    .fees-page {
+      width: 46%; } }
   .fees-page .fees-title {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -854,7 +854,6 @@
   border-collapse: collapse;
   width: 100%; }
   .portrait-fees td, .portrait-fees th, .pet-fees td, .pet-fees th {
-    border: 1px solid #dddddd;
     text-align: left;
     padding: 8.9px;
     white-space: nowrap; }
@@ -864,10 +863,12 @@
   .portrait-fees tr:nth-child(even), .pet-fees tr:nth-child(even) {
     background-color: #bcd3e5; }
 
-.pet-fees td, .pet-fees th {
-  padding: 10px; }
-  @media screen and (min-width: 1024px) {
-    .pet-fees td, .pet-fees th {
-      padding: 12px; } }
+.pet-fees {
+  margin-bottom: 40%; }
+  .pet-fees td, .pet-fees th {
+    padding: 10px; }
+    @media screen and (min-width: 1024px) {
+      .pet-fees td, .pet-fees th {
+        padding: 12px; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -17,7 +17,7 @@ Template Name: Page Fees
 
     <div class="portrait-prices">
 		<div class="pet">
-			<h3>Pet Portrait Fees</h3>
+			<h3>Portrait Fees</h3>
 			<table class="portrait-fees">
 				<tr>
 					<th>Size</th>
@@ -78,7 +78,7 @@ Template Name: Page Fees
 		</div>
 
 		<div class="portrait">
-			<h3>Portrait Fees</h3>
+			<h3>Pet Portrait Fees</h3>
 			<table class="pet-fees">
 				<tr>
 					<th>Size</th>
