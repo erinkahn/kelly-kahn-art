@@ -49,21 +49,7 @@ Template Name: Page About
 
 </section>
 
- <div class="contactForm">
-    <div class="form-text">
-        <p>If you’d like to commission Kelly to paint a portrait or fine art piece for you, or 
-    schedule a private art class, contact her for a quote.</p>
-        <h1>Contact Kelly.</h1>
-    </div>
-    <div class="form-inputs">
-        <form action="" method="post">
-            <label for="POST-name"></label><input id="POST-name" type="text" name="name" placeholder="Your Name:">
-            <label for="POST-email"></label><input id="POST-email" type="text" name="email" Placeholder="Your Email:">
-            <label for="POST-message"></label><input id="POST-message" type="text" name="message" Placeholder="Your Message:">
-            <input type="submit" value="Send" class="sendButton">
-        </form>
-    </div>
-</div>
+
 
 
 

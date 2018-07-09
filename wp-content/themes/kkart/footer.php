@@ -1,7 +1,17 @@
 <?php wp_footer(); ?>
 
+<div class="contactForm">
+    <div class="form-text">
+        <p>Have you been wanting a new portrait of your family to hang up in your home? Do you want to improve your art skills by taking a private art class?</p>
+        <h1>Contact Kelly.</h1>
+    </div>
+    <div class="form-inputs">
+        <?php echo do_shortcode('[contact-form-7 id="268" title="Contact form 1"]');?>
+    </div>
+</div>
 
 <section class="footer">
+    
 
     <div class="copyright">
         <p>Website designed and coded by <a href="erin-kahn.com">Erin Kahn</a></p>
