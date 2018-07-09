@@ -484,22 +484,27 @@
     @media screen and (min-width: 1224px) {
       .contactForm div {
         width: 35%; } }
-  .contactForm .form-text p {
-    width: 100%;
-    margin-bottom: 30px;
-    font-size: 1.2em;
-    padding-top: 80px; }
-    @media screen and (min-width: 768px) {
-      .contactForm .form-text p {
-        line-height: 2.1em;
-        padding-top: 17px; } }
-  .contactForm .form-text h1 {
-    font-weight: 500;
-    font-size: 1.4em;
-    margin-bottom: 17px; }
-    @media screen and (min-width: 1224px) {
-      .contactForm .form-text h1 {
-        font-size: 1.6em; } }
+  .contactForm .form-text {
+    margin-top: 0px; }
+    @media screen and (max-width: 767px) {
+      .contactForm .form-text {
+        margin-top: 80px; } }
+    .contactForm .form-text p {
+      width: 100%;
+      font-size: 1.2em;
+      padding-top: 17px; }
+      @media screen and (min-width: 768px) {
+        .contactForm .form-text p {
+          line-height: 2.1em; }
+          .contactForm .form-text p:first-child {
+            padding-top: 60px; } }
+    .contactForm .form-text h1 {
+      font-weight: 500;
+      font-size: 1.4em;
+      margin: 41px 0; }
+      @media screen and (min-width: 1224px) {
+        .contactForm .form-text h1 {
+          font-size: 1.6em; } }
   .contactForm .form-inputs {
     display: -webkit-box;
     display: -ms-flexbox;

@@ -2,7 +2,8 @@
 
 <div class="contactForm">
     <div class="form-text">
-        <p>Have you been wanting a new portrait of your family to hang up in your home? Do you want to improve your art skills by taking a private art class?</p>
+        <p>Have you been wanting a new portrait of your family to hang up in your home?</p> 
+        <p>Do you want to improve your art skills by taking a private art class?</p>
         <h1>Contact Kelly.</h1>
     </div>
     <div class="form-inputs">
