@@ -598,6 +598,7 @@
             .wpcf7-form{
 
                 p{
+                    
                     label{
                         span{
                             input{
@@ -627,34 +628,13 @@
                     width: 100%;
                     padding: 14px 0;
                     border: none;
-                    
+
                     &:hover{
                         background-color: #cd9394;
                     }
                 }
             }
         }
-    
-            // input{
-            //     padding: 20px 0px;
-            //     font-size: 1em;
-            //     margin-bottom: 20px;
-            //     border: none;
-
-            //     &.wpcf7-form-control.wpcf7-submit{
-            //         transition: 1s ease;
-            //         cursor: pointer;
-            //         background-color: #93c3db;
-            //         margin: 20px 0 0 0;
-            //         color: #fff;
-            //         font-size: 1.2em;
-            //         text-align: center;
-            //         width: 300px;
-                    
-            //         
-            //     }
-            // }
-        
 
     }
 }
