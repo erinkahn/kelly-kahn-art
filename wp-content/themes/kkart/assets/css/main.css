@@ -480,18 +480,10 @@
     @media screen and (min-width: 768px) {
       .contactForm div {
         width: 33%;
-        margin: 0% auto;
-        margin-top: 10%; } }
-    @media screen and (min-width: 768px) {
-      .contactForm div {
-        width: 33%;
-        margin: 0% auto;
-        margin-top: 10%;
-        margin-bottom: 3%; } }
+        margin: 4% auto; } }
     @media screen and (min-width: 1224px) {
       .contactForm div {
-        width: 35%;
-        margin-bottom: 4%; } }
+        width: 35%; } }
   .contactForm .form-text p {
     width: 100%;
     margin-bottom: 30px;
@@ -500,7 +492,7 @@
     @media screen and (min-width: 768px) {
       .contactForm .form-text p {
         line-height: 2.1em;
-        padding-top: 0px; } }
+        padding-top: 17px; } }
   .contactForm .form-text h1 {
     font-weight: 500;
     font-size: 1.4em;
