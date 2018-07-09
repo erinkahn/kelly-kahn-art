@@ -457,7 +457,7 @@
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
       flex-direction: column;
-      margin: 5% auto;
+      margin: 40px auto;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -496,7 +496,7 @@
     width: 100%;
     margin-bottom: 30px;
     font-size: 1.2em;
-    padding-top: 50px; }
+    padding-top: 80px; }
     @media screen and (min-width: 768px) {
       .contactForm .form-text p {
         line-height: 2.1em;
@@ -515,18 +515,40 @@
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column;
-    padding-bottom: 50px; }
+    flex-direction: column; }
+    @media screen and (max-width: 767px) {
+      .contactForm .form-inputs {
+        padding-bottom: 60px; } }
     .contactForm .form-inputs .wpcf7 {
       width: 100%; }
-      .contactForm .form-inputs .wpcf7 .wpcf7-form p label span input {
-        border: none;
-        padding: 14px 0;
-        margin-bottom: 20px;
-        width: 100%; }
-      .contactForm .form-inputs .wpcf7 .wpcf7-form p label span textarea {
-        width: 100%;
-        border: none; }
+      .contactForm .form-inputs .wpcf7 .wpcf7-form ::-webkit-input-placeholder {
+        padding-left: 10px; }
+      .contactForm .form-inputs .wpcf7 .wpcf7-form :-ms-input-placeholder {
+        padding-left: 10px; }
+      .contactForm .form-inputs .wpcf7 .wpcf7-form ::-ms-input-placeholder {
+        padding-left: 10px; }
+      .contactForm .form-inputs .wpcf7 .wpcf7-form ::placeholder {
+        padding-left: 10px; }
+      .contactForm .form-inputs .wpcf7 .wpcf7-form p label {
+        padding: 0;
+        height: 0; }
+        .contactForm .form-inputs .wpcf7 .wpcf7-form p label span input {
+          font-size: 1em;
+          border: none;
+          padding: 14px 0;
+          width: 100%; }
+        .contactForm .form-inputs .wpcf7 .wpcf7-form p label span textarea {
+          font-size: 1em;
+          width: 100%;
+          border: none; }
+          .contactForm .form-inputs .wpcf7 .wpcf7-form p label span textarea::-webkit-input-placeholder {
+            padding-top: 10px; }
+          .contactForm .form-inputs .wpcf7 .wpcf7-form p label span textarea:-ms-input-placeholder {
+            padding-top: 10px; }
+          .contactForm .form-inputs .wpcf7 .wpcf7-form p label span textarea::-ms-input-placeholder {
+            padding-top: 10px; }
+          .contactForm .form-inputs .wpcf7 .wpcf7-form p label span textarea::placeholder {
+            padding-top: 10px; }
       .contactForm .form-inputs .wpcf7 .wpcf7-form .wpcf7-form-control.wpcf7-submit {
         -webkit-transition: 1s ease;
         -o-transition: 1s ease;
@@ -549,7 +571,8 @@
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  margin-bottom: -48px; }
   #archive-page .categories .portfolio-categories {
     width: 100%; }
     @media screen and (min-width: 768px) {
@@ -560,10 +583,6 @@
         width: 25%; } }
     #archive-page .categories .portfolio-categories .single-post {
       width: 100%; }
-
-.contactForm.archive {
-  margin-top: -3px;
-  margin-bottom: 4%; }
 
 .single-portfolio {
   display: -webkit-box;
