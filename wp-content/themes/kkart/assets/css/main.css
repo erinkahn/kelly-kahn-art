@@ -492,12 +492,13 @@
         .contactForm .form-inputs .wpcf7 .wpcf7-form p label span input {
           font-size: 1em;
           border: none;
-          padding: 14px 0;
+          padding: 14px 0 14px 9px;
           width: 100%; }
         .contactForm .form-inputs .wpcf7 .wpcf7-form p label span textarea {
           font-size: 1em;
           width: 100%;
-          border: none; }
+          border: none;
+          padding: 9px 0 0 9px; }
           .contactForm .form-inputs .wpcf7 .wpcf7-form p label span textarea::-webkit-input-placeholder {
             padding-top: 10px; }
           .contactForm .form-inputs .wpcf7 .wpcf7-form p label span textarea:-ms-input-placeholder {

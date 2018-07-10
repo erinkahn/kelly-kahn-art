@@ -583,7 +583,7 @@
                             input{
                                 font-size: 1em;
                                 border: none;
-                                padding: 14px 0;
+                                padding: 14px 0 14px 9px;
                                 width: 100%;
                                 
                             }
@@ -592,6 +592,7 @@
                                 font-size: 1em;
                                 width: 100%;
                                 border: none;
+                                padding: 9px 0 0 9px;
                                 &::placeholder{
                                     padding-top: 10px;
                                 }
@@ -617,6 +618,8 @@
                         background-color: #cd9394;
                     }
                 }
+
+                
             }
         }
 
