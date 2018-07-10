@@ -562,25 +562,6 @@
         .contactForm .form-inputs .wpcf7 .wpcf7-form .wpcf7-form-control.wpcf7-submit:hover {
           background-color: #cd9394; }
 
-#archive-page .categories {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-bottom: -48px; }
-  #archive-page .categories .portfolio-categories {
-    width: 100%; }
-    @media screen and (min-width: 768px) {
-      #archive-page .categories .portfolio-categories {
-        width: 50%; } }
-    @media screen and (min-width: 1024px) {
-      #archive-page .categories .portfolio-categories {
-        width: 25%; } }
-    #archive-page .categories .portfolio-categories .single-post {
-      width: 100%; }
-
 .single-portfolio {
   display: -webkit-box;
   display: -ms-flexbox;
