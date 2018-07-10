@@ -239,12 +239,20 @@
         width: 25%; } }
     .categories .portfolio-categories .single-post .post-link {
       position: relative;
+      display: block;
       width: 25%;
       font-family: 'Lato', serif;
       text-decoration: none;
       font-size: 1.3em;
       letter-spacing: 0.07em;
-      text-align: center; }
+      text-align: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      background-position: 100% auto;
+      height: 0;
+      padding-bottom: 119%;
+      z-index: 1; }
       .categories .portfolio-categories .single-post .post-link h3 {
         padding: 6px 57px;
         position: absolute;
@@ -285,64 +293,16 @@
         background-color: transparent; }
 
 .single-post:first-child .post-link:hover {
-  background-image: url(../img/portraits-hover.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  background-position: 100% auto;
-  height: 0;
-  padding-bottom: 119%;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-  position: absolute;
-  z-index: 1; }
+  background-image: url(../img/portraits-hover.png); }
 
 .single-post:nth-child(2) .post-link:hover {
-  background-image: url(../img/petPortraits-hover.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  background-position: 100% auto;
-  height: 0;
-  padding-bottom: 119%;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-  position: absolute;
-  z-index: 1; }
+  background-image: url(../img/petPortraits-hover.png); }
 
 .single-post:nth-child(3) .post-link:hover {
-  background-image: url(../img/landscapes-hover.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  background-position: 100% auto;
-  height: 0;
-  padding-bottom: 119%;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-  position: absolute;
-  z-index: 1; }
+  background-image: url(../img/landscapes-hover.png); }
 
 .single-post:last-child .post-link:hover {
-  background-image: url(../img/stillLifes-hover.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  background-position: 100% auto;
-  height: 0;
-  padding-bottom: 119%;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-  position: absolute;
-  z-index: 1; }
+  background-image: url(../img/stillLifes-hover.png); }
 
 .iconIllustrations {
   -webkit-box-align: center;
@@ -575,11 +535,16 @@
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    padding: 19px 0;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     max-width: 87%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
     .single-portfolio .galleryImages .image-container {
       position: relative;
+      padding: 19px;
       font-size: 1.4em;
       color: transparent;
       -webkit-transition: .2s ease-in-out;

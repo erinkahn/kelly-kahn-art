@@ -283,12 +283,20 @@
 
             .post-link{
                 position: relative;
+                display: block;
                 width: 25%;
                 font-family: 'Lato', serif;
                 text-decoration: none; 
                 font-size: 1.3em;
                 letter-spacing: 0.07em;
                 text-align: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 100%;
+                background-position: 100% auto;
+                height: 0;
+                padding-bottom: 119%;
+                z-index: 1;
 
                 h3{
                     padding: 6px 57px;
@@ -350,17 +358,6 @@
         
         .post-link:hover{
             background-image: url(../img/portraits-hover.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-            width: 100%;
-            background-position: 100% auto;
-            height: 0;
-            padding-bottom: 119%;
-            left: 50%;
-            transform: translateX(-50%);
-            position: absolute;
-            z-index: 1;
-
         }
     }
 
@@ -368,16 +365,6 @@
         
         .post-link:hover{
             background-image: url(../img/petPortraits-hover.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-            width: 100%;
-            background-position: 100% auto;
-            height: 0;
-            padding-bottom: 119%;
-            left: 50%;
-            transform: translateX(-50%);
-            position: absolute;
-            z-index: 1;
         }
     }
 
@@ -385,16 +372,6 @@
         
         .post-link:hover{
             background-image: url(../img/landscapes-hover.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-            width: 100%;
-            background-position: 100% auto;
-            height: 0;
-            padding-bottom: 119%;
-            left: 50%;
-            transform: translateX(-50%);
-            position: absolute;
-            z-index: 1;
         }
 
     }
@@ -403,16 +380,6 @@
         
         .post-link:hover{
             background-image: url(../img/stillLifes-hover.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-            width: 100%;
-            background-position: 100% auto;
-            height: 0;
-            padding-bottom: 119%;
-            left: 50%;
-            transform: translateX(-50%);
-            position: absolute;
-            z-index: 1;
         }
 
     }
@@ -665,18 +632,19 @@
 .single-portfolio{
     display: flex;
     flex-wrap: wrap;
-   
  
 
     .galleryImages{
         display: flex;
         justify-content: center;
-        padding: 19px 0;
+        flex-wrap: wrap;
         max-width: 87%;
         margin: 0 auto;
-
+        align-items: center;
+        
         .image-container{
             position: relative;
+            padding: 19px;
             font-size: 1.4em;
             color: transparent;
             transition: .2s ease-in-out;
